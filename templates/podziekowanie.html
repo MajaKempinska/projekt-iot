@@ -7,6 +7,7 @@ body { background-image: url('/static/tlo.jpg'); background-size: cover; backgro
 .box { background-color: rgba(8,18,42,0.92); color: #dce6f5; max-width: 600px; margin: 0 auto; padding: 40px; border-radius: 15px; }
 h1 { font-family: 'Audiowide', sans-serif; font-size: 36px; letter-spacing: 2px; transition: all 0.3s ease; cursor: pointer; background: linear-gradient(90deg, #ff4db8, #c44bff, #6e8bff); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 1px rgba(230,200,255,0.6)); }
 h1:hover { background: linear-gradient(90deg, #6e8bff, #c44bff, #ff4db8); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; transform: scale(1.05); }
+.ty-img { display: block; margin: 20px auto; max-width: 340px; border-radius: 12px; }
 .przyciski { margin: 30px 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
 .btn { display: inline-block; padding: 12px 30px; border-radius: 25px; text-decoration: none; color: #fff; font-weight: bold; background: linear-gradient(90deg, #8e2de2, #ff6ec4); transition: all 0.3s ease; }
 .btn:hover { background: linear-gradient(90deg, #ff6ec4, #8e2de2); transform: scale(1.05); }
@@ -19,6 +20,7 @@ h1:hover { background: linear-gradient(90deg, #6e8bff, #c44bff, #ff4db8); -webki
 {% block content %}
 <div class="box">
 <h1>Dziękujemy, {{ imie }}! 💜</h1>
+<img class="ty-img" src="/static/ty.jpg">
 <p>Twoja wiadomość została pomyślnie wysłana.</p>
 <p>Dziękujemy za kontakt. Odpowiemy na adres <b>{{ email }}</b> tak szybko, jak to możliwe.</p>
 <p><b>W międzyczasie zapraszamy do zapoznania się z naszą stroną.</b></p>
