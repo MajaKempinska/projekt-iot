@@ -4,10 +4,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 <style>
 body { background-image: url('/static/tlo.jpg'); background-size: cover; background-attachment: fixed; font-family: Arial; padding: 20px; text-align: center; }
-.box { background-color: rgba(8,18,42,0.92); color: #dce6f5; max-width: 600px; margin: 0 auto; padding: 40px; border-radius: 15px; }
+.box { background-color: rgba(8,18,42,0.92); color: #dce6f5; max-width: 600px; margin: 0 auto; padding: 40px; border-radius: 15px; box-sizing: border-box; }
 h1 { font-family: 'Audiowide', sans-serif; font-size: 36px; letter-spacing: 2px; transition: all 0.3s ease; cursor: pointer; background: linear-gradient(90deg, #ff4db8, #c44bff, #6e8bff); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 1px rgba(230,200,255,0.6)); }
 h1:hover { background: linear-gradient(90deg, #6e8bff, #c44bff, #ff4db8); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; transform: scale(1.05); }
-.ty-img { display: block; margin: 20px auto; max-width: 340px; border-radius: 12px; }
+.ty-img { display: block; margin: 20px auto; max-width: 340px; width: 100%; border-radius: 12px; }
 .przyciski { margin: 30px 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
 .btn { display: inline-block; padding: 12px 30px; border-radius: 25px; text-decoration: none; color: #fff; font-weight: bold; background: linear-gradient(90deg, #8e2de2, #ff6ec4); transition: all 0.3s ease; }
 .btn:hover { background: linear-gradient(90deg, #ff6ec4, #8e2de2); transform: scale(1.05); }
@@ -15,6 +15,11 @@ h1:hover { background: linear-gradient(90deg, #6e8bff, #c44bff, #ff4db8); -webki
 .co-dalej-tytul { font-weight: bold; text-align: center; margin-top: 30px; }
 .btn-powrot { display: inline-block; margin-top: 25px; padding: 12px 18px; border-radius: 25px; text-decoration: none; color: #fff; font-weight: bold; background: linear-gradient(90deg, #00b4ff, #8e2de2); transition: all 0.3s ease; }
 .btn-powrot:hover { background: linear-gradient(90deg, #8e2de2, #00b4ff); transform: scale(1.05); }
+@media (max-width: 768px) {
+  .box { padding: 25px 18px; }
+  h1 { font-size: 26px; }
+  .ty-img { max-width: 220px; }
+}
 </style>
 {% endblock %}
 {% block content %}
