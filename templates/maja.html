@@ -9,8 +9,11 @@ img:hover { transform: scale(1.08); }
 p { text-align: center; }
 h1 { transition: all 0.3s ease; cursor: pointer; background: linear-gradient(90deg, #b56cff, #ff9ed6); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 h1:hover { background: linear-gradient(90deg, #ff9ed6, #b56cff); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; transform: scale(1.05); }
-.btn { display: inline-block; margin-top: 20px; padding: 12px 30px; border-radius: 25px; text-decoration: none; color: #fff; font-weight: bold; background: linear-gradient(90deg, #8e2de2, #ff6ec4); transition: all 0.3s ease; }
+.przyciski { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; width: 180px; padding: 12px 0; border-radius: 25px; text-decoration: none; color: #fff; font-weight: bold; box-sizing: border-box; transition: all 0.3s ease; background: linear-gradient(90deg, #8e2de2, #ff6ec4); }
 .btn:hover { background: linear-gradient(90deg, #ff6ec4, #8e2de2); transform: scale(1.05); }
+.btn-github { background: linear-gradient(90deg, #00b4ff, #8e2de2); }
+.btn-github:hover { background: linear-gradient(90deg, #8e2de2, #00b4ff); transform: scale(1.05); }
 </style>
 {% endblock %}
 {% block content %}
@@ -25,6 +28,9 @@ h1:hover { background: linear-gradient(90deg, #ff9ed6, #b56cff); -webkit-backgro
 ⚫ Od siedmiu lat działam również jako tutor języka angielskiego. Specjalizuję się w&nbsp;przygotowywaniu uczniów do egzaminu ósmoklasisty, matury oraz międzynarodowych certyfikatów językowych, skutecznie wspierając ich rozwój i&nbsp;osiąganie celów edukacyjnych.<br>
 🟣 Moje naturalne predyspozycje oraz mocne strony zostały potwierdzone badaniem Gallupa, co pozwala mi świadomie wykorzystywać swoje talenty zarówno w&nbsp;pracy indywidualnej, jak i&nbsp;zespołowej.<br>
 ⚫ Jeśli poszukujesz osoby, która łączy kompetencje techniczne świata IT z&nbsp;rozwiniętymi umiejętnościami interpersonalnymi, komunikacyjnymi i&nbsp;analitycznymi - jestem gotowa dołączyć do kolejnego projektu i&nbsp;podejmować nowe wyzwania w&nbsp;cyfrowej rzeczywistości przyszłości.</p>
+<div class="przyciski">
+<a class="btn btn-github" href="https://github.com/MajaKempinska/" target="_blank">💻 GitHub</a>
 <a class="btn" href="/">Powrót</a>
+</div>
 </div>
 {% endblock %}

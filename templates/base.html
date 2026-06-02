@@ -3,9 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <title>{% block title %}{% endblock %}</title>
+<link rel="icon" href="/static/favicon.png?v=3" type="image/png">
 {% block head %}{% endblock %}
+<style>
+html, body { margin: 0; padding: 0; }
+body { display: flex; flex-direction: column; min-height: 100vh; }
+.tresc-strony { flex: 1; padding: 20px; box-sizing: border-box; }
+nav.menu { background-color: #050a1a; display: flex; align-items: center; flex-wrap: wrap; gap: 30px; padding: 6px 25px; font-family: Arial; box-sizing: border-box; }
+nav.menu a { font-weight: bold; font-size: 16px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all 0.3s ease; }
+nav.menu a:first-of-type { margin-left: 54%; }
+nav.menu .logo img { height: 70px; display: block; transition: all 0.3s ease; }
+nav.menu .logo img:hover { transform: scale(1.12); }
+nav.menu a .txt { transition: all 0.3s ease; background: linear-gradient(90deg, #8e2de2, #ff6ec4); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+nav.menu a:hover { transform: scale(1.1); }
+nav.menu a:hover .txt { background: linear-gradient(90deg, #00b4ff, #8e2de2); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+footer.stopka { background-color: #050a1a; color: #ffffff; text-align: center; padding: 18px 20px; font-family: Arial; font-size: 14px; line-height: 1.6; box-sizing: border-box; }
+footer.stopka .linia1 { font-weight: bold; }
+footer.stopka .linia2 { color: #cfd6e6; font-size: 13px; }
+#loader {
+position: fixed;
+top: 0; left: 0;
+width: 100%; height: 100%;
+background: #050a1a;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+animation: zniknij 0.6s ease 1.2s forwards;
+}
+#loader img {
+width: 400px;
+animation: puls 1.2s ease-in-out infinite;
+}
+@keyframes puls {
+  0%, 100% { transform: scale(1); opacity: 0.85; }
+  50% { transform: scale(1.12); opacity: 1; }
+}
+@keyframes zniknij {
+  to { opacity: 0; visibility: hidden; }
+}
+</style>
 </head>
 <body>
-    {% block content %}{% endblock %}
+<div id="loader">
+<img src="/static/ladowaniestrony.png" alt="Ładowanie">
+</div>
+<nav class="menu">
+<a href="/"><span>🏠</span><span class="txt">Strona główna</span></a>
+<a href="/maja"><span>💜</span><span class="txt">O Mai</span></a>
+<a href="/asia"><span>💙</span><span class="txt">O Asi</span></a>
+<a href="/kontakt"><span>✉️</span><span class="txt">Kontakt</span></a>
+<span class="logo"><img src="/static/ladowaniestrony.png" alt="Logo"></span>
+</nav>
+<div class="tresc-strony">
+        {% block content %}{% endblock %}
+</div>
+<footer class="stopka">
+<div class="linia1">© 2026 Maja Kempińska &amp; Joanna Skrzypczak</div>
+<div class="linia2">Projekt IoT &amp; Cloud Computing</div>
+</footer>
 </body>
 </html>
