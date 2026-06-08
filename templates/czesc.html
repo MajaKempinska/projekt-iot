@@ -8,15 +8,16 @@ body { background-image: url('/static/tlo.jpg'); background-size: cover; backgro
 h1 { font-family: 'Audiowide', sans-serif; font-size: 46px; letter-spacing: 2px; transition: all 0.3s ease; cursor: pointer; background: linear-gradient(90deg, #ff4db8, #c44bff, #6e8bff); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 1px rgba(230,200,255,0.6)); }
 h1:hover { background: linear-gradient(90deg, #6e8bff, #c44bff, #ff4db8); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; transform: scale(1.05); }
 .galeria { display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin-top: 40px; }
-.karta { display: flex; flex-direction: column; align-items: center; max-width: 320px; }
-.karta img { width: 300px; border-radius: 12px; transition: all 0.3s ease; }
+.karta { display: flex; flex-direction: column; align-items: center; max-width: 420px; }
+.karta img { width: 380px; max-width: 100%; border-radius: 12px; transition: all 0.3s ease; }
 .karta img:hover { transform: scale(1.08); }
 .imie { font-size: 26px; font-weight: bold; margin: 15px 0 5px 0; transition: all 0.3s ease; cursor: pointer; background: linear-gradient(90deg, #8e2de2, #ff6ec4); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .imie:hover { background: linear-gradient(90deg, #ff6ec4, #8e2de2); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; transform: scale(1.05); }
 .podpis { margin: 10px 0 18px 0; font-size: 16px; line-height: 1.4; }
+.przyciski { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 25px; }
 .btn { display: inline-block; padding: 12px 30px; border-radius: 25px; text-decoration: none; color: #fff; font-weight: bold; background: linear-gradient(90deg, #8e2de2, #ff6ec4); transition: all 0.3s ease; }
 .btn:hover { background: linear-gradient(90deg, #ff6ec4, #8e2de2); transform: scale(1.05); }
-.btn-kontakt { margin-top: 40px; padding: 12px 18px; background: linear-gradient(90deg, #00b4ff, #8e2de2); }
+.btn-kontakt { background: linear-gradient(90deg, #00b4ff, #8e2de2); }
 .btn-kontakt:hover { background: linear-gradient(90deg, #8e2de2, #00b4ff); transform: scale(1.05); }
 </style>
 {% endblock %}
@@ -27,16 +28,12 @@ h1:hover { background: linear-gradient(90deg, #6e8bff, #c44bff, #ff4db8); -webki
 <div class="karta">
 <img src="/static/maja.jpg">
 <div class="imie">Maja</div>
-<div class="podpis">Ambitna studentka informatyki, tutorka angielskiego z biegłością na poziomie C2.</div>
+<div class="podpis">Ambitna studentka informatyki, tutorka angielskiego.</div>
+</div>
+</div>
+<div class="przyciski">
 <a class="btn" href="/maja">O Mai</a>
-</div>
-<div class="karta">
-<img src="/static/asia.jpg">
-<div class="imie">Asia</div>
-<div class="podpis">Programistka Appian z doświadczeniem we front-endzie i pracy zespołowej.</div>
-<a class="btn" href="/asia">O Asi</a>
-</div>
-</div>
 <a class="btn btn-kontakt" href="/kontakt">✉️ Kontakt</a>
+</div>
 </div>
 {% endblock %}

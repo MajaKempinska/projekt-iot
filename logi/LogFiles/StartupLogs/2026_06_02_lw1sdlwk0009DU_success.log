@@ -1,0 +1,209 @@
+2026-06-02T20:00:52.3436494+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site stopped at 06/02/2026 19:31:43 (UTC), DetailsLevel: ERR
+2026-06-02T20:00:54.9342200+00:00 ContainerStatus: State: Starting, Action: StartingMsiContainer, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site stopped at 06/02/2026 19:31:43 (UTC), DetailsLevel: ERR
+2026-06-02T20:01:05.0525697+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site stopped at 06/02/2026 19:31:43 (UTC), DetailsLevel: ERR
+2026-06-02T20:01:05.0526914+00:00 ContainerStatus: Container start method called.
+2026-06-02T20:01:05.0527368+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Pulling image iotcdv2026.azurecr.io/iot-app:v1 for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T20:01:05.0528098+00:00 ContainerStatus: Establishing network.
+2026-06-02T20:01:05.0529101+00:00 ContainerStatus: Pulling image: iotcdv2026.azurecr.io/iot-app:v1.
+2026-06-02T20:01:18.6805379+00:00 ContainerStatus: Image iotcdv2026.azurecr.io/iot-app:v1 is pulled from registry iotcdv2026.azurecr.io
+2026-06-02T20:01:18.6984788+00:00 ContainerStatus: Container is starting.
+2026-06-02T20:01:18.7189724+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Mounting volumes for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T20:01:18.7193433+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-06-02T20:01:18.7194393+00:00 ContainerStatus: Establishing network if not established already.
+2026-06-02T20:01:18.7195397+00:00 ContainerStatus: Mounting volumes.
+2026-06-02T20:01:18.7196885+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-06-02T20:01:18.7595589+00:00 ContainerStatus: Nested mountpoint 
+2026-06-02T20:01:19.2615987+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Finished pulling container image and mounting volumes for iot-maja-asia. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-02T20:01:19.2618967+00:00 ContainerStatus: Creating container.
+2026-06-02T20:01:19.2636348+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-06-02T20:01:19.2639021+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/f579257b7954_iot-maja-asia/stdout_53c10bfb1c0a4b80b260a22035478700.
+2026-06-02T20:01:19.2641052+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/f579257b7954_iot-maja-asia/stdout_53c10bfb1c0a4b80b260a22035478700.
+2026-06-02T20:01:19.2641845+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/f579257b7954_iot-maja-asia/stdout_53c10bfb1c0a4b80b260a22035478700 for reading in non-blocking mode.
+2026-06-02T20:01:19.2642877+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/f579257b7954_iot-maja-asia/stdout_53c10bfb1c0a4b80b260a22035478700.
+2026-06-02T20:01:19.2720464+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/f579257b7954_iot-maja-asia/stdout_53c10bfb1c0a4b80b260a22035478700.
+2026-06-02T20:01:19.2726511+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/f579257b7954_iot-maja-asia/stderr_feb14e83f66349ee81fee4a11e57c424.
+2026-06-02T20:01:19.2728002+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/f579257b7954_iot-maja-asia/stderr_feb14e83f66349ee81fee4a11e57c424.
+2026-06-02T20:01:19.2728806+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/f579257b7954_iot-maja-asia/stderr_feb14e83f66349ee81fee4a11e57c424 for reading in non-blocking mode.
+2026-06-02T20:01:19.2730016+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/f579257b7954_iot-maja-asia/stderr_feb14e83f66349ee81fee4a11e57c424.
+2026-06-02T20:01:19.2730793+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/f579257b7954_iot-maja-asia/stderr_feb14e83f66349ee81fee4a11e57c424.
+2026-06-02T20:01:19.2737302+00:00 ContainerStatus: Creating container with image: iotcdv2026.azurecr.io/iot-app:v1 from registry: iotcdv2026.azurecr.io and fully qualified image name: iotcdv2026.azurecr.io/iot-app:v1
+2026-06-02T20:01:20.4461679+00:00 ContainerStatus: Starting container: f579257b7954_iot-maja-asia.
+2026-06-02T20:01:20.5115279+00:00 ContainerStatus: Starting watchers and probes.
+2026-06-02T20:01:20.5212011+00:00 ContainerStatus: Starting metrics collection.
+2026-06-02T20:01:20.5417326+00:00 ContainerStatus: Container is running.
+2026-06-02T20:01:20.5418916+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Container iot-maja-asia successfully created and is running., DetailsLevel: INFO
+2026-06-02T20:01:20.6710502+00:00 ContainerStatus: Container start method finished after 15609 ms.
+2026-06-02T20:01:20.6714816+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Container iot-maja-asia successfully created and is running., DetailsLevel: INFO
+2026-06-02T20:01:20.6718596+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-02T20:01:21.2871190+00:00 ContainerStream: [2026-06-02 20:01:21 +0000] [1] [INFO] Starting gunicorn 26.0.0
+2026-06-02T20:01:21.2971904+00:00 ContainerStream: [2026-06-02 20:01:21 +0000] [1] [INFO] Listening at: http://0.0.0.0:80 (1)
+2026-06-02T20:01:21.2973837+00:00 ContainerStream: [2026-06-02 20:01:21 +0000] [1] [INFO] Using worker: sync
+2026-06-02T20:01:21.3181849+00:00 ContainerStream: [2026-06-02 20:01:21 +0000] [7] [INFO] Booting worker with pid: 7
+2026-06-02T20:01:22.2113305+00:00 ContainerStream: [2026-06-02 20:01:22 +0000] [1] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+2026-06-02T20:01:22.3626697+00:00 ContainerStatus: Site startup probe succeeded after 1.639158 seconds.
+2026-06-02T20:01:22.5032534+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site startup probe succeeded after 1.639158 seconds., DetailsLevel: INFO
+========== New Cold Start Attempt (2026-06-02T20:01:22.7587266+00:00) ==========
+2026-06-02T20:01:22.7587266+00:00 ContainerStatus: Site started.
+2026-06-02T20:01:22.7639592+00:00 ContainerStatus: State: Started, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site started at 06/02/2026 20:01:22 (UTC), DetailsLevel: INFO
+2026-06-02T20:23:43.7972196+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-02T20:23:48.0373434+00:00 ContainerStatus: State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-02T20:24:10.9922478+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-02T20:24:11.0117462+00:00 ContainerStatus: Container start method called.
+2026-06-02T20:24:11.0120363+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image iotcdv2026.azurecr.io/iot-app:v1 for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T20:24:11.0122291+00:00 ContainerStatus: Establishing network.
+2026-06-02T20:24:11.0124318+00:00 ContainerStatus: Pulling image: iotcdv2026.azurecr.io/iot-app:v1.
+2026-06-02T20:24:23.8235133+00:00 ContainerStatus: Image iotcdv2026.azurecr.io/iot-app:v1 is pulled from registry iotcdv2026.azurecr.io
+2026-06-02T20:24:23.8241576+00:00 ContainerStatus: Container is starting.
+2026-06-02T20:24:23.8352833+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T20:24:23.8424223+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-06-02T20:24:23.8427688+00:00 ContainerStatus: Establishing network if not established already.
+2026-06-02T20:24:23.8430083+00:00 ContainerStatus: Mounting volumes.
+2026-06-02T20:24:23.8432937+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-06-02T20:24:23.8549931+00:00 ContainerStatus: Nested mountpoint 
+2026-06-02T20:24:23.9432880+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for iot-maja-asia. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-02T20:24:23.9435844+00:00 ContainerStatus: Creating container.
+2026-06-02T20:24:23.9448642+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-06-02T20:24:23.9537260+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/6a088e1a7261_iot-maja-asia/stdout_6322aa8360db4d09a31f076647a3cdce.
+2026-06-02T20:24:23.9541503+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/6a088e1a7261_iot-maja-asia/stdout_6322aa8360db4d09a31f076647a3cdce.
+2026-06-02T20:24:23.9544715+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/6a088e1a7261_iot-maja-asia/stdout_6322aa8360db4d09a31f076647a3cdce for reading in non-blocking mode.
+2026-06-02T20:24:23.9561607+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/6a088e1a7261_iot-maja-asia/stdout_6322aa8360db4d09a31f076647a3cdce.
+2026-06-02T20:24:23.9938822+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/6a088e1a7261_iot-maja-asia/stdout_6322aa8360db4d09a31f076647a3cdce.
+2026-06-02T20:24:23.9953990+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/6a088e1a7261_iot-maja-asia/stderr_76e17822f7ff44b7bcf700f77b5d57b9.
+2026-06-02T20:24:24.0052937+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/6a088e1a7261_iot-maja-asia/stderr_76e17822f7ff44b7bcf700f77b5d57b9.
+2026-06-02T20:24:24.0055186+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/6a088e1a7261_iot-maja-asia/stderr_76e17822f7ff44b7bcf700f77b5d57b9 for reading in non-blocking mode.
+2026-06-02T20:24:24.0057169+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/6a088e1a7261_iot-maja-asia/stderr_76e17822f7ff44b7bcf700f77b5d57b9.
+2026-06-02T20:24:24.0159628+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/6a088e1a7261_iot-maja-asia/stderr_76e17822f7ff44b7bcf700f77b5d57b9.
+2026-06-02T20:24:24.0162912+00:00 ContainerStatus: Creating container with image: iotcdv2026.azurecr.io/iot-app:v1 from registry: iotcdv2026.azurecr.io and fully qualified image name: iotcdv2026.azurecr.io/iot-app:v1
+2026-06-02T20:24:25.7558064+00:00 ContainerStatus: Starting container: 6a088e1a7261_iot-maja-asia.
+2026-06-02T20:24:25.9462718+00:00 ContainerStatus: Starting watchers and probes.
+2026-06-02T20:24:25.9466471+00:00 ContainerStatus: Starting metrics collection.
+2026-06-02T20:24:25.9761839+00:00 ContainerStatus: Container is running.
+2026-06-02T20:24:25.9770305+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container iot-maja-asia successfully created and is running., DetailsLevel: INFO
+2026-06-02T20:24:26.1370417+00:00 ContainerStatus: Container start method finished after 15124 ms.
+2026-06-02T20:24:26.1373039+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container iot-maja-asia successfully created and is running., DetailsLevel: INFO
+2026-06-02T20:24:26.1373520+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-02T20:24:28.0188850+00:00 ContainerStream: [2026-06-02 20:24:28 +0000] [1] [INFO] Starting gunicorn 26.0.0
+2026-06-02T20:24:28.0288132+00:00 ContainerStream: [2026-06-02 20:24:28 +0000] [1] [INFO] Listening at: http://0.0.0.0:80 (1)
+2026-06-02T20:24:28.0382128+00:00 ContainerStream: [2026-06-02 20:24:28 +0000] [1] [INFO] Using worker: sync
+2026-06-02T20:24:28.0588061+00:00 ContainerStream: [2026-06-02 20:24:28 +0000] [7] [INFO] Booting worker with pid: 7
+2026-06-02T20:24:29.8982307+00:00 ContainerStream: [2026-06-02 20:24:29 +0000] [1] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+2026-06-02T20:24:30.2325351+00:00 ContainerStatus: Site startup probe succeeded after 3.915344 seconds.
+2026-06-02T20:24:30.4917332+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.915344 seconds., DetailsLevel: INFO
+2026-06-02T20:24:30.9537854+00:00 ContainerStatus: Site started.
+2026-06-02T20:24:30.9540907+00:00 ContainerStatus: State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/02/2026 20:24:30 (UTC), DetailsLevel: INFO
+========== New Cold Start Attempt (2026-06-02T20:24:51.7258779+00:00) ==========
+2026-06-02T20:24:51.7258779+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site started at 06/02/2026 20:01:22 (UTC), DetailsLevel: INFO
+2026-06-02T20:24:51.7264740+00:00 ContainerStatus: Container is terminating. Grace period: 5 seconds.
+2026-06-02T20:24:51.9772142+00:00 ContainerStatus: Stop and delete container. Retry count = 0
+2026-06-02T20:24:51.9775276+00:00 ContainerStatus: Stopping container: f579257b7954_iot-maja-asia.
+2026-06-02T20:24:52.8981091+00:00 ContainerStream: [Previous Container] [2026-06-02 20:24:52 +0000] [1] [INFO] Handling signal: term
+2026-06-02T20:24:52.9595338+00:00 ContainerStream: [Previous Container] [2026-06-02 20:24:52 +0000] [7] [INFO] Worker exiting (pid: 7)
+2026-06-02T20:24:54.1047937+00:00 ContainerStream: [Previous Container] [2026-06-02 20:24:54 +0000] [1] [INFO] Shutting down: Master
+2026-06-02T20:24:54.9292342+00:00 ContainerStatus: Deleting container: f579257b7954_iot-maja-asia. Retry count = 0
+2026-06-02T20:24:55.2670385+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-06-02T20:24:55.2740624+00:00 ContainerStatus: Container is terminated. Total time elapsed: 3540 ms.
+2026-06-02T20:24:55.7967565+00:00 ContainerStatus: Site: iot-maja-asia stopped.
+2026-06-02T20:49:23.9431101+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-02T20:49:28.5166142+00:00 ContainerStatus: State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-02T20:49:48.7523518+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-02T20:49:48.7526157+00:00 ContainerStatus: Container start method called.
+2026-06-02T20:49:48.7526712+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image iotcdv2026.azurecr.io/iot-app:v1 for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T20:49:48.7527573+00:00 ContainerStatus: Establishing network.
+2026-06-02T20:49:48.7528612+00:00 ContainerStatus: Pulling image: iotcdv2026.azurecr.io/iot-app:v1.
+2026-06-02T20:50:08.6349358+00:00 ContainerStatus: Image iotcdv2026.azurecr.io/iot-app:v1 is pulled from registry iotcdv2026.azurecr.io
+2026-06-02T20:50:08.6356309+00:00 ContainerStatus: Container is starting.
+2026-06-02T20:50:08.6455523+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T20:50:08.6467012+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-06-02T20:50:08.6468408+00:00 ContainerStatus: Establishing network if not established already.
+2026-06-02T20:50:08.6477508+00:00 ContainerStatus: Mounting volumes.
+2026-06-02T20:50:08.6871841+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-06-02T20:50:08.7281829+00:00 ContainerStatus: Nested mountpoint 
+2026-06-02T20:50:08.9376723+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for iot-maja-asia. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-02T20:50:08.9379347+00:00 ContainerStatus: Creating container.
+2026-06-02T20:50:08.9391320+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-06-02T20:50:08.9394129+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/602fd953ead2_iot-maja-asia/stdout_80bd90f45cae4768ae7a96c8f9425b2a.
+2026-06-02T20:50:08.9487174+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/602fd953ead2_iot-maja-asia/stdout_80bd90f45cae4768ae7a96c8f9425b2a.
+2026-06-02T20:50:08.9577037+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/602fd953ead2_iot-maja-asia/stdout_80bd90f45cae4768ae7a96c8f9425b2a for reading in non-blocking mode.
+2026-06-02T20:50:08.9885958+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/602fd953ead2_iot-maja-asia/stdout_80bd90f45cae4768ae7a96c8f9425b2a.
+2026-06-02T20:50:09.0078132+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/602fd953ead2_iot-maja-asia/stdout_80bd90f45cae4768ae7a96c8f9425b2a.
+2026-06-02T20:50:09.0087482+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/602fd953ead2_iot-maja-asia/stderr_4c66f3ea4d65424593a1b13824563c1e.
+2026-06-02T20:50:09.0090500+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/602fd953ead2_iot-maja-asia/stderr_4c66f3ea4d65424593a1b13824563c1e.
+2026-06-02T20:50:09.0091872+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/602fd953ead2_iot-maja-asia/stderr_4c66f3ea4d65424593a1b13824563c1e for reading in non-blocking mode.
+2026-06-02T20:50:09.0586352+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/602fd953ead2_iot-maja-asia/stderr_4c66f3ea4d65424593a1b13824563c1e.
+2026-06-02T20:50:09.0590862+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/602fd953ead2_iot-maja-asia/stderr_4c66f3ea4d65424593a1b13824563c1e.
+2026-06-02T20:50:09.0700174+00:00 ContainerStatus: Creating container with image: iotcdv2026.azurecr.io/iot-app:v1 from registry: iotcdv2026.azurecr.io and fully qualified image name: iotcdv2026.azurecr.io/iot-app:v1
+2026-06-02T20:50:10.7663092+00:00 ContainerStatus: Starting container: 602fd953ead2_iot-maja-asia.
+2026-06-02T20:50:10.9892524+00:00 ContainerStatus: Starting watchers and probes.
+2026-06-02T20:50:10.9895408+00:00 ContainerStatus: Starting metrics collection.
+2026-06-02T20:50:10.9896582+00:00 ContainerStatus: Container is running.
+2026-06-02T20:50:10.9897282+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container iot-maja-asia successfully created and is running., DetailsLevel: INFO
+2026-06-02T20:50:11.2210544+00:00 ContainerStatus: Container start method finished after 22468 ms.
+2026-06-02T20:50:11.2212238+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container iot-maja-asia successfully created and is running., DetailsLevel: INFO
+2026-06-02T20:50:11.2212407+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-02T20:50:13.0675326+00:00 ContainerStream: [2026-06-02 20:50:13 +0000] [1] [INFO] Starting gunicorn 26.0.0
+2026-06-02T20:50:13.0786049+00:00 ContainerStream: [2026-06-02 20:50:13 +0000] [1] [INFO] Listening at: http://0.0.0.0:80 (1)
+2026-06-02T20:50:13.0867174+00:00 ContainerStream: [2026-06-02 20:50:13 +0000] [1] [INFO] Using worker: sync
+2026-06-02T20:50:13.1186061+00:00 ContainerStream: [2026-06-02 20:50:13 +0000] [7] [INFO] Booting worker with pid: 7
+2026-06-02T20:50:15.1903510+00:00 ContainerStream: [2026-06-02 20:50:15 +0000] [1] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+2026-06-02T20:50:15.5741949+00:00 ContainerStatus: Site startup probe succeeded after 4.2740394 seconds.
+2026-06-02T20:50:15.8561326+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 4.2740394 seconds., DetailsLevel: INFO
+========== New Cold Start Attempt (2026-06-02T20:50:16.3683441+00:00) ==========
+2026-06-02T20:50:16.3683441+00:00 ContainerStatus: Site started.
+2026-06-02T20:50:16.3690866+00:00 ContainerStatus: State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/02/2026 20:50:16 (UTC), DetailsLevel: INFO
+2026-06-02T20:50:36.5245713+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site started at 06/02/2026 20:24:30 (UTC), DetailsLevel: INFO
+2026-06-02T20:50:36.5247354+00:00 ContainerStatus: Container is terminating. Grace period: 5 seconds.
+2026-06-02T20:50:36.5547845+00:00 ContainerStatus: Stop and delete container. Retry count = 0
+2026-06-02T20:50:36.5549800+00:00 ContainerStatus: Stopping container: 6a088e1a7261_iot-maja-asia.
+2026-06-02T20:50:36.6967782+00:00 ContainerStream: [Previous Container] [2026-06-02 20:50:36 +0000] [7] [INFO] Worker exiting (pid: 7)
+2026-06-02T20:50:36.7064192+00:00 ContainerStream: [Previous Container] Nowa wiadomość od Maj (blabka@gg): Nnn
+2026-06-02T20:50:36.7064627+00:00 ContainerStream: [Previous Container] Nowa wiadomość od Maja (tpkorepetycje@gmail.com): ..
+2026-06-02T20:50:37.1981269+00:00 ContainerStream: [Previous Container] [2026-06-02 20:50:37 +0000] [1] [INFO] Shutting down: Master
+2026-06-02T20:50:37.3549896+00:00 ContainerStatus: Deleting container: 6a088e1a7261_iot-maja-asia. Retry count = 0
+2026-06-02T20:50:37.6659942+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-06-02T20:50:37.6674404+00:00 ContainerStatus: Container is terminated. Total time elapsed: 1141 ms.
+2026-06-02T20:50:38.0729253+00:00 ContainerStatus: Site: iot-maja-asia stopped.
+2026-06-02T21:12:52.0337741+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-02T21:12:55.7856997+00:00 ContainerStatus: State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-02T21:13:15.6779468+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-02T21:13:15.7079257+00:00 ContainerStatus: Container start method called.
+2026-06-02T21:13:15.7168974+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image iotcdv2026.azurecr.io/iot-app:v1 for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T21:13:15.7179190+00:00 ContainerStatus: Establishing network.
+2026-06-02T21:13:15.7282474+00:00 ContainerStatus: Pulling image: iotcdv2026.azurecr.io/iot-app:v1.
+2026-06-02T21:13:19.9598243+00:00 ContainerStatus: Container is starting.
+2026-06-02T21:13:19.9599719+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T21:13:19.9601250+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-06-02T21:13:19.9602424+00:00 ContainerStatus: Establishing network if not established already.
+2026-06-02T21:13:19.9606710+00:00 ContainerStatus: Mounting volumes.
+2026-06-02T21:13:19.9685966+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-06-02T21:13:20.0099327+00:00 ContainerStatus: Nested mountpoint 
+2026-06-02T21:13:20.3624429+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for iot-maja-asia. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-02T21:13:20.3630041+00:00 ContainerStatus: Creating container.
+2026-06-02T21:13:20.3732123+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-06-02T21:13:20.3735078+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/c216ed1d138e_iot-maja-asia/stdout_e29df0cdaed44ace8240471dc9c12b7e.
+2026-06-02T21:13:20.3830573+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/c216ed1d138e_iot-maja-asia/stdout_e29df0cdaed44ace8240471dc9c12b7e.
+2026-06-02T21:13:20.3834976+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/c216ed1d138e_iot-maja-asia/stdout_e29df0cdaed44ace8240471dc9c12b7e for reading in non-blocking mode.
+2026-06-02T21:13:20.4117485+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/c216ed1d138e_iot-maja-asia/stdout_e29df0cdaed44ace8240471dc9c12b7e.
+2026-06-02T21:13:20.4119754+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/c216ed1d138e_iot-maja-asia/stdout_e29df0cdaed44ace8240471dc9c12b7e.
+2026-06-02T21:13:20.4121161+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/c216ed1d138e_iot-maja-asia/stderr_33b970b909fa475dabcb74f3be3e7569.
+2026-06-02T21:13:20.4129816+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/c216ed1d138e_iot-maja-asia/stderr_33b970b909fa475dabcb74f3be3e7569.
+2026-06-02T21:13:20.4130618+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/c216ed1d138e_iot-maja-asia/stderr_33b970b909fa475dabcb74f3be3e7569 for reading in non-blocking mode.
+2026-06-02T21:13:20.4131634+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/c216ed1d138e_iot-maja-asia/stderr_33b970b909fa475dabcb74f3be3e7569.
+2026-06-02T21:13:20.4132355+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/c216ed1d138e_iot-maja-asia/stderr_33b970b909fa475dabcb74f3be3e7569.
+2026-06-02T21:13:20.5623651+00:00 ContainerStatus: Creating container with image: iotcdv2026.azurecr.io/iot-app:v1 from registry: iotcdv2026.azurecr.io and fully qualified image name: iotcdv2026.azurecr.io/iot-app:v1
+2026-06-02T21:13:21.8593461+00:00 ContainerStatus: Starting container: c216ed1d138e_iot-maja-asia.
+2026-06-02T21:13:22.1407804+00:00 ContainerStatus: Starting watchers and probes.
+2026-06-02T21:13:22.1424400+00:00 ContainerStatus: Starting metrics collection.
+2026-06-02T21:13:22.1426340+00:00 ContainerStatus: Container is running.
+2026-06-02T21:13:22.1431379+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container iot-maja-asia successfully created and is running., DetailsLevel: INFO
+2026-06-02T21:13:22.1933599+00:00 ContainerStatus: Container start method finished after 6485 ms.
+2026-06-02T21:13:22.1937068+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container iot-maja-asia successfully created and is running., DetailsLevel: INFO
+2026-06-02T21:13:22.2937155+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-02T21:13:24.6978632+00:00 ContainerStream: [2026-06-02 21:13:24 +0000] [1] [INFO] Starting gunicorn 26.0.0
+2026-06-02T21:13:24.8068090+00:00 ContainerStream: [2026-06-02 21:13:24 +0000] [1] [INFO] Listening at: http://0.0.0.0:80 (1)
+2026-06-02T21:13:24.8068386+00:00 ContainerStream: [2026-06-02 21:13:24 +0000] [1] [INFO] Using worker: sync
+2026-06-02T21:13:24.8262542+00:00 ContainerStream: [2026-06-02 21:13:24 +0000] [7] [INFO] Booting worker with pid: 7
+2026-06-02T21:13:27.5936306+00:00 ContainerStream: [2026-06-02 21:13:27 +0000] [1] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+2026-06-02T21:13:28.1671825+00:00 ContainerStatus: Site startup probe succeeded after 5.7939696 seconds.
+2026-06-02T21:13:28.5814439+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 5.7939696 seconds., DetailsLevel: INFO
+2026-06-02T21:13:29.1338827+00:00 ContainerStatus: Site started.
+2026-06-02T21:13:29.1535543+00:00 ContainerStatus: State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/02/2026 21:13:29 (UTC), DetailsLevel: INFO

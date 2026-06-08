@@ -1,0 +1,3 @@
+2026-06-05T00:03:53.8019281Z [Previous Container] [2026-06-05 00:03:53 +0000] [1] [INFO] Handling signal: term
+2026-06-05T00:03:53.8078238Z [Previous Container] [2026-06-05 00:03:53 +0000] [7] [INFO] Worker exiting (pid: 7)
+2026-06-05T00:03:54.1164347Z [Previous Container] [2026-06-05 00:03:54 +0000] [1] [INFO] Shutting down: Master

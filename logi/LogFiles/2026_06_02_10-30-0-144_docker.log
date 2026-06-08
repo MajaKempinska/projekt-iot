@@ -1,0 +1,223 @@
+2026-06-02T18:22:22.4519454Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-02T18:22:23.4893809Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-02T18:22:23.4925168Z Container start method called.
+2026-06-02T18:22:23.4955359Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image iotcdv2026.azurecr.io/iot-app:v1 for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T18:22:23.4960075Z Establishing network.
+2026-06-02T18:22:23.4964620Z Pulling image: iotcdv2026.azurecr.io/iot-app:v1.
+2026-06-02T18:22:26.1696304Z Container pull image failed with reason: ImagePullFailure. Revert by terminate.
+2026-06-02T18:22:26.1730639Z Container is terminating. Grace period: 5 seconds.
+2026-06-02T18:22:26.1740880Z Container spec TerminationMessagePolicy  path 
+2026-06-02T18:22:26.1762745Z Container is terminated. Total time elapsed: 3 ms.
+2026-06-02T18:22:26.1763936Z Site container: iot-maja-asia terminated during site startup.
+2026-06-02T18:22:26.1781630Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:22:26.1869831Z State: Stopping, Action: CancellingStartup, LastError: ImagePullUnauthorizedFailure, LastErrorTimestamp: 06/02/2026 18:22:26, LastErrorDetails: Failed to pull image: iotcdv2026.azurecr.io/iot-app:v1. Image pull failed with forbidden or unauthorized. Check registry credentials., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:22:26.1909620Z Failed to start site. Revert by stopping site.
+2026-06-02T18:22:26.1954640Z State: Stopping, Action: StoppingSite, LastError: ImagePullUnauthorizedFailure, LastErrorTimestamp: 06/02/2026 18:22:26, LastErrorDetails: Failed to pull image: iotcdv2026.azurecr.io/iot-app:v1. Image pull failed with forbidden or unauthorized. Check registry credentials., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:22:26.1977617Z State: Stopping, Action: StoppingSiteContainers, LastError: ImagePullUnauthorizedFailure, LastErrorTimestamp: 06/02/2026 18:22:26, LastErrorDetails: Failed to pull image: iotcdv2026.azurecr.io/iot-app:v1. Image pull failed with forbidden or unauthorized. Check registry credentials., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:22:26.1988654Z Site: iot-maja-asia stopped.
+2026-06-02T18:22:26.2051362Z State: Stopping, Action: UnmountingVolumes, LastError: ImagePullUnauthorizedFailure, LastErrorTimestamp: 06/02/2026 18:22:26, LastErrorDetails: Failed to pull image: iotcdv2026.azurecr.io/iot-app:v1. Image pull failed with forbidden or unauthorized. Check registry credentials., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:22:26.2805080Z State: Stopping, Action: StoppingSiteNetworks, LastError: ImagePullUnauthorizedFailure, LastErrorTimestamp: 06/02/2026 18:22:26, LastErrorDetails: Failed to pull image: iotcdv2026.azurecr.io/iot-app:v1. Image pull failed with forbidden or unauthorized. Check registry credentials., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:22:26.4920624Z State: Stopped, Action: None, LastError: ImagePullUnauthorizedFailure, LastErrorTimestamp: 06/02/2026 18:22:26, LastErrorDetails: Failed to pull image: iotcdv2026.azurecr.io/iot-app:v1. Image pull failed with forbidden or unauthorized. Check registry credentials., Details: Site stopped at 06/02/2026 18:22:26 (UTC), DetailsLevel: ERR
+2026-06-02T18:22:26.6236836Z State: Stopped, Action: None, LastError: ImagePullUnauthorizedFailure, LastErrorTimestamp: 06/02/2026 18:22:26, LastErrorDetails: Failed to pull image: iotcdv2026.azurecr.io/iot-app:v1. Image pull failed with forbidden or unauthorized. Check registry credentials., Details: Site stopped at 06/02/2026 18:22:26 (UTC), DetailsLevel: ERR
+2026-06-02T18:22:34.7101209Z State: Starting, Action: EstablishingSiteNetworks, LastError: ImagePullUnauthorizedFailure, LastErrorTimestamp: 06/02/2026 18:22:26, LastErrorDetails: Failed to pull image: iotcdv2026.azurecr.io/iot-app:v1. Image pull failed with forbidden or unauthorized. Check registry credentials., Details: Site stopped at 06/02/2026 18:22:26 (UTC), DetailsLevel: ERR
+2026-06-02T18:22:34.9510889Z State: Starting, Action: StartingSiteContainers, LastError: ImagePullUnauthorizedFailure, LastErrorTimestamp: 06/02/2026 18:22:26, LastErrorDetails: Failed to pull image: iotcdv2026.azurecr.io/iot-app:v1. Image pull failed with forbidden or unauthorized. Check registry credentials., Details: Site stopped at 06/02/2026 18:22:26 (UTC), DetailsLevel: ERR
+2026-06-02T18:22:34.9516612Z Container start method called.
+2026-06-02T18:22:34.9517774Z State: Starting, Action: PullingImage, LastError: ImagePullUnauthorizedFailure, LastErrorTimestamp: 06/02/2026 18:22:26, LastErrorDetails: Failed to pull image: iotcdv2026.azurecr.io/iot-app:v1. Image pull failed with forbidden or unauthorized. Check registry credentials., Details: Pulling image iotcdv2026.azurecr.io/iot-app:v1 for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T18:22:34.9523083Z Establishing network.
+2026-06-02T18:22:34.9529007Z Pulling image: iotcdv2026.azurecr.io/iot-app:v1.
+2026-06-02T18:22:35.0797853Z Container pull image failed with reason: ImagePullFailure. Revert by terminate.
+2026-06-02T18:22:35.0799606Z Container is terminating. Grace period: 5 seconds.
+2026-06-02T18:22:35.0800596Z Container spec TerminationMessagePolicy  path 
+2026-06-02T18:22:35.0801719Z Container is terminated. Total time elapsed: 0 ms.
+2026-06-02T18:22:35.0802767Z Site container: iot-maja-asia terminated during site startup.
+2026-06-02T18:22:35.0803442Z State: Stopping, Action: CancellingStartup, LastError: ImagePullUnauthorizedFailure, LastErrorTimestamp: 06/02/2026 18:22:26, LastErrorDetails: Failed to pull image: iotcdv2026.azurecr.io/iot-app:v1. Image pull failed with forbidden or unauthorized. Check registry credentials., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:22:35.0814339Z State: Stopping, Action: CancellingStartup, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:22:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:22:35.0856640Z Failed to start site. Revert by stopping site.
+2026-06-02T18:22:35.0860151Z State: Stopping, Action: StoppingSite, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:22:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:22:35.0863536Z State: Stopping, Action: StoppingSiteContainers, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:22:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:22:35.0863742Z Site: iot-maja-asia stopped.
+2026-06-02T18:23:15.835Z INFO  - Pulling image: iotcdv2026.azurecr.io/iot-app:v1
+2026-06-02T18:23:16.201Z INFO  - v1 Pulling from iot-app
+2026-06-02T18:23:16.215Z INFO  -  
+2026-06-02T18:23:16.217Z ERROR - no matching manifest for linux/amd64 in the manifest list entriesErr: 0, Message: no matching manifest for linux/amd64 in the manifest list entries
+2026-06-02T18:23:16.220Z INFO  - Pull Image failed, Time taken: 0 Seconds
+2026-06-02T18:23:16.220Z ERROR - Pulling docker image iotcdv2026.azurecr.io/iot-app:v1 failed:
+2026-06-02T18:23:16.307Z ERROR - DockerApiException: Docker API responded with status code=InternalServerError, response={"message":"Head \"https://iotcdv2026.azurecr.io/v2/iot-app/manifests/v1\": unauthorized: {\"errors\":[{\"code\":\"UNAUTHORIZED\",\"message\":\"authentication required, visit https://aka.ms/acr/authorization for more information. CorrelationId: fc7963a5-42a1-43ba-afdb-35fb7476b4fe\"}]}"}
+
+2026-06-02T18:23:16.313Z WARN  - Image pull failed. Defaulting to local copy if present.
+2026-06-02T18:23:16.314Z ERROR - Image pull failed: Verify docker image configuration and credentials (if using private repository)
+2026-06-02T18:23:16.360Z INFO  - Stopping site iot-maja-asia because it failed during startup.
+2026-06-02T18:23:23.677Z INFO  - Pulling image: iotcdv2026.azurecr.io/iot-app:v1
+2026-06-02T18:23:23.908Z INFO  - v1 Pulling from iot-app
+2026-06-02T18:23:23.917Z INFO  -  
+2026-06-02T18:23:23.918Z ERROR - no matching manifest for linux/amd64 in the manifest list entriesErr: 0, Message: no matching manifest for linux/amd64 in the manifest list entries
+2026-06-02T18:23:23.921Z INFO  - Pull Image failed, Time taken: 0 Seconds
+2026-06-02T18:23:23.922Z ERROR - Pulling docker image iotcdv2026.azurecr.io/iot-app:v1 failed:
+2026-06-02T18:23:24.013Z ERROR - DockerApiException: Docker API responded with status code=InternalServerError, response={"message":"Head \"https://iotcdv2026.azurecr.io/v2/iot-app/manifests/v1\": unauthorized: {\"errors\":[{\"code\":\"UNAUTHORIZED\",\"message\":\"authentication required, visit https://aka.ms/acr/authorization for more information. CorrelationId: da82f70e-058d-4de5-a8d5-c195ec8375e2\"}]}"}
+
+2026-06-02T18:23:24.014Z WARN  - Image pull failed. Defaulting to local copy if present.
+2026-06-02T18:23:24.016Z ERROR - Image pull failed: Verify docker image configuration and credentials (if using private repository)
+2026-06-02T18:23:24.018Z INFO  - Stopping site iot-maja-asia because it failed during startup.
+2026-06-02T18:23:34.379Z INFO  - Pulling image: iotcdv2026.azurecr.io/iot-app:v1
+2026-06-02T18:23:34.720Z INFO  - v1 Pulling from iot-app
+2026-06-02T18:23:34.848Z INFO  -  
+2026-06-02T18:23:34.849Z ERROR - no matching manifest for linux/amd64 in the manifest list entriesErr: 0, Message: no matching manifest for linux/amd64 in the manifest list entries
+2026-06-02T18:23:34.852Z INFO  - Pull Image failed, Time taken: 0 Seconds
+2026-06-02T18:23:34.854Z ERROR - Pulling docker image iotcdv2026.azurecr.io/iot-app:v1 failed:
+2026-06-02T18:23:34.939Z ERROR - DockerApiException: Docker API responded with status code=InternalServerError, response={"message":"Head \"https://iotcdv2026.azurecr.io/v2/iot-app/manifests/v1\": unauthorized: {\"errors\":[{\"code\":\"UNAUTHORIZED\",\"message\":\"authentication required, visit https://aka.ms/acr/authorization for more information. CorrelationId: d502a6f7-0392-4e4c-8496-12cad3b38d66\"}]}"}
+
+2026-06-02T18:23:34.940Z WARN  - Image pull failed. Defaulting to local copy if present.
+2026-06-02T18:23:34.945Z ERROR - Image pull failed: Verify docker image configuration and credentials (if using private repository)
+2026-06-02T18:23:34.948Z INFO  - Stopping site iot-maja-asia because it failed during startup.
+2026-06-02T18:23:45.286Z INFO  - Pulling image: iotcdv2026.azurecr.io/iot-app:v1
+2026-06-02T18:23:45.559Z INFO  - v1 Pulling from iot-app
+2026-06-02T18:23:45.569Z INFO  -  
+2026-06-02T18:23:45.570Z ERROR - no matching manifest for linux/amd64 in the manifest list entriesErr: 0, Message: no matching manifest for linux/amd64 in the manifest list entries
+2026-06-02T18:23:45.573Z INFO  - Pull Image failed, Time taken: 0 Seconds
+2026-06-02T18:23:45.573Z ERROR - Pulling docker image iotcdv2026.azurecr.io/iot-app:v1 failed:
+2026-06-02T18:23:45.689Z ERROR - DockerApiException: Docker API responded with status code=InternalServerError, response={"message":"Head \"https://iotcdv2026.azurecr.io/v2/iot-app/manifests/v1\": unauthorized: {\"errors\":[{\"code\":\"UNAUTHORIZED\",\"message\":\"authentication required, visit https://aka.ms/acr/authorization for more information. CorrelationId: b2f6a78e-c4ad-4ec8-a554-93a8515f4c83\"}]}"}
+
+2026-06-02T18:23:45.691Z WARN  - Image pull failed. Defaulting to local copy if present.
+2026-06-02T18:23:45.696Z ERROR - Image pull failed: Verify docker image configuration and credentials (if using private repository)
+2026-06-02T18:23:45.701Z INFO  - Stopping site iot-maja-asia because it failed during startup.
+2026-06-02T18:26:02.057Z INFO  - Pulling image: iotcdv2026.azurecr.io/iot-app:v1
+2026-06-02T18:26:02.400Z INFO  - v1 Pulling from iot-app
+2026-06-02T18:26:02.416Z INFO  -  
+2026-06-02T18:26:02.417Z ERROR - no matching manifest for linux/amd64 in the manifest list entriesErr: 0, Message: no matching manifest for linux/amd64 in the manifest list entries
+2026-06-02T18:26:02.420Z INFO  - Pull Image failed, Time taken: 0 Seconds
+2026-06-02T18:26:02.421Z ERROR - Pulling docker image iotcdv2026.azurecr.io/iot-app:v1 failed:
+2026-06-02T18:26:02.480Z ERROR - DockerApiException: Docker API responded with status code=InternalServerError, response={"message":"Head \"https://iotcdv2026.azurecr.io/v2/iot-app/manifests/v1\": unauthorized: {\"errors\":[{\"code\":\"UNAUTHORIZED\",\"message\":\"authentication required, visit https://aka.ms/acr/authorization for more information. CorrelationId: 8b2ca878-49f7-47af-89e7-f8588442f44e\"}]}"}
+
+2026-06-02T18:26:02.481Z WARN  - Image pull failed. Defaulting to local copy if present.
+2026-06-02T18:26:03.276Z ERROR - Image pull failed: Verify docker image configuration and credentials (if using private repository)
+2026-06-02T18:26:03.281Z INFO  - Stopping site iot-maja-asia because it failed during startup.
+2026-06-02T18:28:34.2216883Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-02T18:28:34.8085850Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-02T18:28:34.8088509Z Container start method called.
+2026-06-02T18:28:34.8089804Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image iotcdv2026.azurecr.io/iot-app:v1 for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T18:28:34.8092924Z Establishing network.
+2026-06-02T18:28:34.8095631Z Pulling image: iotcdv2026.azurecr.io/iot-app:v1.
+2026-06-02T18:28:35.1197447Z Container pull image failed with reason: ImagePullFailure. Revert by terminate.
+2026-06-02T18:28:35.1201052Z Container is terminating. Grace period: 5 seconds.
+2026-06-02T18:28:35.1204974Z Container spec TerminationMessagePolicy  path 
+2026-06-02T18:28:35.1206776Z Container is terminated. Total time elapsed: 0 ms.
+2026-06-02T18:28:35.1209990Z Site container: iot-maja-asia terminated during site startup.
+2026-06-02T18:28:35.1211065Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:28:35.1226265Z State: Stopping, Action: CancellingStartup, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:28:35.1447136Z Failed to start site. Revert by stopping site.
+2026-06-02T18:28:35.1461698Z State: Stopping, Action: StoppingSite, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:28:35.1464219Z State: Stopping, Action: StoppingSiteContainers, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:28:35.1464404Z Site: iot-maja-asia stopped.
+2026-06-02T18:28:35.1557280Z State: Stopping, Action: UnmountingVolumes, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:28:35.1947717Z State: Stopping, Action: StoppingSiteNetworks, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:28:35.3681423Z State: Stopped, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site stopped at 06/02/2026 18:28:35 (UTC), DetailsLevel: ERR
+2026-06-02T18:28:35.5182272Z State: Stopped, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site stopped at 06/02/2026 18:28:35 (UTC), DetailsLevel: ERR
+2026-06-02T18:28:40.8043170Z State: Starting, Action: EstablishingSiteNetworks, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site stopped at 06/02/2026 18:28:35 (UTC), DetailsLevel: ERR
+2026-06-02T18:28:41.1286071Z State: Starting, Action: StartingSiteContainers, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site stopped at 06/02/2026 18:28:35 (UTC), DetailsLevel: ERR
+2026-06-02T18:28:41.1287409Z Container start method called.
+2026-06-02T18:28:41.1287850Z State: Starting, Action: PullingImage, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Pulling image iotcdv2026.azurecr.io/iot-app:v1 for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T18:28:41.1288824Z Establishing network.
+2026-06-02T18:28:41.1290037Z Pulling image: iotcdv2026.azurecr.io/iot-app:v1.
+2026-06-02T18:28:41.2942363Z Container pull image failed with reason: ImagePullFailure. Revert by terminate.
+2026-06-02T18:28:41.2944607Z Container is terminating. Grace period: 5 seconds.
+2026-06-02T18:28:41.2946348Z Container spec TerminationMessagePolicy  path 
+2026-06-02T18:28:41.2947571Z Container is terminated. Total time elapsed: 0 ms.
+2026-06-02T18:28:41.2948456Z Site container: iot-maja-asia terminated during site startup.
+2026-06-02T18:28:41.2949271Z State: Stopping, Action: CancellingStartup, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:35, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:28:41.2967911Z State: Stopping, Action: CancellingStartup, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:28:41.3108199Z Failed to start site. Revert by stopping site.
+2026-06-02T18:28:41.3110349Z State: Stopping, Action: StoppingSite, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:28:41.3112562Z State: Stopping, Action: StoppingSiteContainers, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:28:41.3112755Z Site: iot-maja-asia stopped.
+2026-06-02T18:28:41.3200822Z State: Stopping, Action: UnmountingVolumes, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:28:41.3652802Z State: Stopping, Action: StoppingSiteNetworks, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:28:41.5531360Z Site: iot-maja-asia will be blocked for 1 minutes till 06/02/2026 18:29:41
+2026-06-02T18:28:41.5533784Z State: Blocked, Action: StoppingSiteNetworks, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site: iot-maja-asia will be blocked for 1 minutes till 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:28:41.5537733Z State: Stopped, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site stopped at 06/02/2026 18:28:41 (UTC), DetailsLevel: WARN
+2026-06-02T18:28:41.6716297Z State: Stopped, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site stopped at 06/02/2026 18:28:41 (UTC), DetailsLevel: WARN
+2026-06-02T18:28:43.4275058Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:28:43.4275369Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:28:46.7207095Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:28:46.7207309Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:28:56.7917702Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:28:56.7917899Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:29:01.8509601Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:29:01.8510203Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:29:07.6174567Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:29:07.6174795Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:29:12.6799487Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:29:12.6799704Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:29:17.7331971Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:29:17.7332263Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:29:22.8145061Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:29:22.8145362Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:29:28.4642561Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:29:28.4642779Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:29:33.5386429Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:29:33.5386641Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:29:38.6106868Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:29:38.6107073Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:29:41.5560423Z Site: iot-maja-asia is unblocked.
+2026-06-02T18:29:43.6553812Z State: Starting, Action: EstablishingSiteNetworks, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:29:44.0825411Z State: Starting, Action: StartingSiteContainers, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:29:41, DetailsLevel: WARN
+2026-06-02T18:29:44.0826904Z Container start method called.
+2026-06-02T18:29:44.0827617Z State: Starting, Action: PullingImage, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Pulling image iotcdv2026.azurecr.io/iot-app:v1 for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T18:29:44.0828730Z Establishing network.
+2026-06-02T18:29:44.0885972Z Pulling image: iotcdv2026.azurecr.io/iot-app:v1.
+2026-06-02T18:29:44.8707447Z Container pull image failed with reason: ImagePullFailure. Revert by terminate.
+2026-06-02T18:29:44.8715557Z Container is terminating. Grace period: 5 seconds.
+2026-06-02T18:29:44.8718656Z Container spec TerminationMessagePolicy  path 
+2026-06-02T18:29:44.8723869Z Container is terminated. Total time elapsed: 0 ms.
+2026-06-02T18:29:44.8729481Z Site container: iot-maja-asia terminated during site startup.
+2026-06-02T18:29:44.8731024Z State: Stopping, Action: CancellingStartup, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:28:41, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:29:44.8748678Z State: Stopping, Action: CancellingStartup, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:29:44.8888339Z Failed to start site. Revert by stopping site.
+2026-06-02T18:29:44.8892702Z State: Stopping, Action: StoppingSite, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:29:44.8894793Z State: Stopping, Action: StoppingSiteContainers, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:29:44.8894939Z Site: iot-maja-asia stopped.
+2026-06-02T18:29:44.9133057Z State: Stopping, Action: UnmountingVolumes, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:29:44.9585290Z State: Stopping, Action: StoppingSiteNetworks, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:29:45.0251730Z Site: iot-maja-asia will be blocked for 1 minutes till 06/02/2026 18:30:45
+2026-06-02T18:29:45.0260149Z State: Blocked, Action: StoppingSiteNetworks, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site: iot-maja-asia will be blocked for 1 minutes till 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:29:45.0266162Z State: Stopped, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site stopped at 06/02/2026 18:29:45 (UTC), DetailsLevel: WARN
+2026-06-02T18:29:45.2698245Z State: Stopped, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site stopped at 06/02/2026 18:29:45 (UTC), DetailsLevel: WARN
+2026-06-02T18:29:50.4059113Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:29:50.4059316Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:29:55.4438782Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:29:55.4438996Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:30:00.5191718Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:30:00.5191967Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:30:05.5606375Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:30:05.5606583Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:30:10.6103655Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:30:10.6103851Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:30:15.6424632Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:30:15.6424854Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:30:20.6782968Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:30:20.6783189Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:30:25.7306039Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:30:25.7306251Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:30:30.7749716Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:30:30.7750020Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:30:35.8271013Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:30:35.8271235Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:30:40.8816136Z State: Blocked, Action: None, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:30:40.8816349Z Start site prohibitted because the site is being blocked.
+2026-06-02T18:30:45.0247492Z Site: iot-maja-asia is unblocked.
+2026-06-02T18:30:45.9549683Z State: Starting, Action: EstablishingSiteNetworks, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:30:46.2003943Z State: Starting, Action: StartingSiteContainers, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/02/2026 18:30:45, DetailsLevel: WARN
+2026-06-02T18:30:46.2005331Z Container start method called.
+2026-06-02T18:30:46.2005669Z State: Starting, Action: PullingImage, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Pulling image iotcdv2026.azurecr.io/iot-app:v1 for iot-maja-asia., DetailsLevel: INFO
+2026-06-02T18:30:46.2006559Z Establishing network.
+2026-06-02T18:30:46.2007649Z Pulling image: iotcdv2026.azurecr.io/iot-app:v1.
+2026-06-02T18:30:46.3911384Z Container pull image failed with reason: ImagePullFailure. Revert by terminate.
+2026-06-02T18:30:46.3914635Z Container is terminating. Grace period: 5 seconds.
+2026-06-02T18:30:46.3916116Z Container spec TerminationMessagePolicy  path 
+2026-06-02T18:30:46.3919540Z Container is terminated. Total time elapsed: 0 ms.
+2026-06-02T18:30:46.3920825Z Site container: iot-maja-asia terminated during site startup.
+2026-06-02T18:30:46.3921616Z State: Stopping, Action: CancellingStartup, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:29:44, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:30:46.3930488Z State: Stopping, Action: CancellingStartup, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:30:46, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:30:46.3991350Z Failed to start site. Revert by stopping site.
+2026-06-02T18:30:46.3993086Z State: Stopping, Action: StoppingSite, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:30:46, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:30:46.3999816Z State: Stopping, Action: StoppingSiteContainers, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 18:30:46, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site container: iot-maja-asia terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-02T18:30:46.3999968Z Site: iot-maja-asia stopped.

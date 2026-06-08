@@ -1,0 +1,5 @@
+<step title="Incoming Request" date="2026-06-02T19:31:49.032" instance="4956fd" url="/logstream" method="GET" type="request" pid="831,1,7" Host="iot-maja-asia.scm.azurewebsites.net" User-Agent="AZURECLI/2.86.0 (HOMEBREW)" Accept-Encoding="identity" Authorization="Bea..." x-ms-client-request-id="a46b9694-5eb9-11f1-8e9f-a2dcb7894bb0" X-ARR-LOG-ID="a46b9694-5eb9-11f1-8e9f-a2dcb7894bb0" CLIENT-IP="194.156.198.65:50414" X-SITE-DEPLOYMENT-ID="iot-maja-asia" WAS-DEFAULT-HOSTNAME="iot-maja-asia.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/logstream" X-Client-IP="194.156.198.65" X-Client-Port="50414" >
+  <step title="LogStreamHandlerMiddleware.Invoke" date="2026-06-02T19:31:49.151" /><!-- duration: 98ms -->
+  <step title="Error occurred" date="2026-06-02T19:35:49.255" type="error" text="LogStreamManager: ProcessRequest end" /><!-- duration: 4ms -->
+  <step title="Outgoing response" date="2026-06-02T19:35:49.270" type="response" statusCode="200" statusText="OK" /><!-- duration: 4ms -->
+</step><!-- duration: 240245ms -->
