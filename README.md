@@ -38,25 +38,34 @@ projekt-iot/
 
 ## Uruchomienie lokalne
 
-### Bez Dockera
-\`\`\`bash
-pip install -r requirements.txt
-python app.py
-\`\`\`
-Aplikacja dostępna pod \`http://localhost:5001\`.
+### W kontenerze Docker (zalecane)
 
-### W kontenerze Docker
+Najpewniejszy sposób – kontener zawiera wszystkie zależności, w tym sterownik ODBC do bazy:
+
 \`\`\`bash
 docker build -t iot-app:v1 .
 docker run -d -p 8080:80 --name iot-test iot-app:v1
 \`\`\`
+
 Aplikacja dostępna pod \`http://localhost:8080\`.
+
+### Bez Dockera
+
+\`\`\`bash
+pip install -r requirements.txt
+python app.py
+\`\`\`
+
+Aplikacja dostępna pod \`http://localhost:5001\`.
+
+> **Uwaga:** uruchomienie bez Dockera wymaga zainstalowanego sterownika *ODBC Driver 18 for SQL Server* (potrzebnego dla biblioteki \`pyodbc\`). Bez niego aplikacja uruchomi się w trybie podglądu stron, ale funkcje bazy danych (zapis i odczyt wiadomości) będą nieaktywne. W kontenerze Docker sterownik jest instalowany automatycznie.
 
 ---
 
 ## Wdrożenie w chmurze Azure
 
 Budowanie obrazu dla architektury zgodnej z Azure (x86) i wysłanie do rejestru:
+
 \`\`\`bash
 docker build --platform linux/amd64 -t iot-app:v1 .
 docker tag iot-app:v1 iotcdv2026.azurecr.io/iot-app:v1
@@ -69,9 +78,16 @@ Dzięki skonfigurowanemu **Continuous Deployment** (webhook ACR) sam \`docker pu
 
 ---
 
+## Bezpieczeństwo – Managed Identity
+
+Usługa App Service uwierzytelnia się wobec rejestru ACR przy użyciu **tożsamości zarządzanej** (Managed Identity) z rolą \`AcrPull\`, zamiast loginu i hasła. Dzięki temu w konfiguracji aplikacji nie są przechowywane żadne poświadczenia do rejestru.
+
+---
+
 ## Infrastruktura jako kod (Terraform)
 
 Folder \`terraform/\` zawiera definicję infrastruktury. Wdrożenie:
+
 \`\`\`bash
 cd terraform
 terraform init
@@ -80,6 +96,7 @@ terraform apply
 \`\`\`
 
 Usunięcie utworzonej infrastruktury:
+
 \`\`\`bash
 terraform destroy
 \`\`\`
@@ -89,6 +106,7 @@ terraform destroy
 ## Dobre praktyki FinOps
 
 Wszystkie zasoby utworzono w ramach subskrypcji *Azure for Students*. Po zakończeniu projektu zasoby należy usunąć, aby nie zużywać kredytu:
+
 \`\`\`bash
 az group delete --name iot-rg --yes
 \`\`\`

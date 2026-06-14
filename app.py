@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request
 
-# pyodbc jest tylko w kontenerze (chmura). Lokalnie może go nie być -
+# pyodbc jest tylko w kontenerze (chmura). Lokalnie moze go nie byc -
 # wtedy aplikacja dziala bez bazy (do podgladu stron), zamiast sie wywalac.
 try:
     import pyodbc

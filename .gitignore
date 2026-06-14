@@ -10,3 +10,7 @@ terraform/.terraform.lock.hcl
 terraform/*.tfstate
 terraform/*.tfstate.*
 terraform/*.tfplan
+logi2/
+logi2.zip
+logi/
+*.zip
