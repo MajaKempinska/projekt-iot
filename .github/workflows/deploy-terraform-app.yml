@@ -1,0 +1,28 @@
+name: Wdrożenie na infrastrukturę z Terraform
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pobierz kod
+        uses: actions/checkout@v4
+
+      - name: Ustaw Pythona
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Zainstaluj zależności
+        run: |
+          python -m venv antenv
+          source antenv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Wdróż na Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'bfwithmaja-tf'
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_TF }}
