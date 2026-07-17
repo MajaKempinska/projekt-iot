@@ -14,3 +14,8 @@ logi2/
 logi2.zip
 logi/
 *.zip
+logi/
+logi2/
+*.zip
+__pycache__/
+venv/

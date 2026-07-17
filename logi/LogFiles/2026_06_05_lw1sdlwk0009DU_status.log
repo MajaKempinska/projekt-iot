@@ -1,9 +1,0 @@
-2026-06-05T00:03:53.6814908Z State: Stopping, Action: StoppingSite, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site started at 06/04/2026 23:50:32 (UTC), DetailsLevel: INFO
-2026-06-05T00:03:53.7155808Z State: Stopping, Action: StoppingSiteContainers, LastError: UnexpectedContainerExit, LastErrorTimestamp: 06/02/2026 19:31:42, LastErrorDetails: Pull image: iotcdv2026.azurecr.io/iot-app:v1 failed with unexpected exception., Details: Site started at 06/04/2026 23:50:32 (UTC), DetailsLevel: INFO
-2026-06-05T00:03:53.7162956Z Container is terminating. Grace period: 5 seconds.
-2026-06-05T00:03:53.7342010Z Stop and delete container. Retry count = 0
-2026-06-05T00:03:53.7342988Z Stopping container: 2753743fe433_iot-maja-asia_main.
-2026-06-05T00:03:54.2404031Z Deleting container: 2753743fe433_iot-maja-asia_main. Retry count = 0
-2026-06-05T00:03:54.4849393Z Container spec TerminationMessagePolicy  path 
-2026-06-05T00:03:54.4857630Z Container is terminated. Total time elapsed: 768 ms.
-2026-06-05T00:03:54.9195279Z Site: iot-maja-asia stopped.
